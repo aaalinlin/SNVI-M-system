@@ -2,7 +2,7 @@
 
 ## Weight bundles
 
-Download link: to be added.
+Download link: https://github.com/aaalinlin/SNVI-M-system/releases/download/v1.0.0/weights.zip
 
 Extract the weight archive and follow the prediction instructions in README.md. The project source code is required to load the models.
 
