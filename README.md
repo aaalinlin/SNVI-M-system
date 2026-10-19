@@ -33,7 +33,7 @@ python scripts/prepare.py --workspace "$WORK" --raw "$RAW"
 python tests/verify.py --workspace "$WORK" --gpu "$GPU" --output "$WORK/verification.json"
 ```
 
-预处理会自动生成当前数据的指纹、3D 配置和五折划分，全部保存在 `$WORK`。划分和训练默认种子为 `20261017`，每折训练种子加 `10000 × 折号`，可用 `--seed` 指定。若同一患者有多次扫描，预处理时加 `--groups /path/to/groups.json`，文件格式为 `{"CASE_A": "patient_1", "CASE_B": "patient_1"}`，需覆盖全部病例。
+预处理会自动生成当前数据的指纹、3D 配置和五折划分，全部保存在 `$WORK`。若同一患者有多次扫描，预处理时加 `--groups /path/to/groups.json`，文件格式为 `{"CASE_A": "patient_1", "CASE_B": "patient_1"}`，需覆盖全部病例。
 
 ## 训练
 
